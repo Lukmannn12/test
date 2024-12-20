@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profil Perusahaan</title>
+</head>
+<body>
+    <header>
+        Profil Perusahaan
+    </header>
+    <main>
+        <img src="gambar/logo.jpg" alt="Foto Profil" class="profile-image">
+        <div class="description">
+            <p>Perusahaan kami berdedikasi untuk memberikan layanan terbaik kepada pelanggan dengan inovasi dan teknologi terbaru.</p>
+            <p>Kami percaya bahwa dengan kerja sama tim yang solid, kami dapat menghadirkan solusi terbaik untuk kebutuhan Anda.</p>
+        </div>
+        <button class="change-color-button" onclick="changeBackgroundColor()">Ubah Warna</button>
+    </main>
+    <script>
+        function changeBackgroundColor() {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
